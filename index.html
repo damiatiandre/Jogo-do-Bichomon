@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bichomon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            :root {
+                --text-color: #ffc802;
+                --backHeF-color: #343a40;
+                --hover-color: #eac02c; 
+            }
+
+            
+    
+            header {
+                background-color: var(--text-color);
+                padding: 10px 0;
+            }
+
+            header .container {
+                display: flex;
+                align-items: center;
+            }
+
+            header img {
+                width: 100px;
+                margin-right: 10px; /* Espaçamento entre a imagem e o título */
+            }
+    
+            header h1 {
+                color: var(--text-color);
+                font-size: 45px;
+                margin-bottom: 0;
+            }
+
+            header nav {
+                margin-left: auto;
+            }
+    
+            header nav ul li a {
+                color: var(--text-color);
+                text-decoration: none;
+                font-size: 18px;
+                border: 1px solid var(--backHeF-color);
+                border-radius: 5px;
+                background-color: var(--text-color);
+                color: var(--backHeF-color);
+                margin: 5px;
+            }
+    
+            header nav ul li a:hover {
+                background-color: var(--hover-color);
+                color: var(--backHeF-color);
+            }
+    
+            body {
+                background-color: var(--text-color);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            img {
+                align-items: center;
+                padding-left: 30px;
+            }
+
+            .card {
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            }
+
+            .card-body {
+                background-color: var(--backHeF-color);
+                color: var(--text-color);
+            }
+            hr {
+                border-color: var(--text-color);
+            }
+
+            .card-title {
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .card-text {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .card-number {
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                border: 1px solid var(--backHeF-color);
+                border-radius: 50px;
+                background-color: var(--text-color);
+                color: var(--backHeF-color);
+                width: 30px;
+                height: 30px;
+                align-items: center;
+                margin-left: 40px;
+                padding-top: 5px;
+            }
+
+            section div p {
+                font-size: 18px;
+            }
+
+            .col-md-2 {
+                margin-bottom: 10px;
+            }
+    
+            .col-md-2 section {
+                padding: 20px;
+                border-radius: 15px;
+            }
+    
+            .col-md-2 h2 {
+                font-size: 18px;
+                margin-top: 0;
+            }
+    
+            .col-md-2 p {
+                font-size: 12px;
+            }
+    
+            footer {
+                background-color: var(--backHeF-color);
+                color: var(--backHeF-color);
+                padding: 10px;
+                width: 100%;
+                bottom: 0;
+            }
+            
+            footer div p {
+                font-size: 18px;
+            }
+    
+            footer p {
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+        </style>
+</head>
+
+<body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <img src="./img/logo.png" alt="logo do bichomon" width="100px">
+            <h1 class="my-4">Jogo do Bichomon</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#features">Pokedex</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#game">Jogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Bem-vindo ao Jogo do Bichomon Online</h2>
+            <p class="lead">Experimente a emoção de apostar no seu bichomon preferido!</p>
+            <p class="lead">Clique aqui e faça suas escolhas.</p>
+            <a href="#game" class="btn btn-warning btn-lg">Jogue agora</a>
+        </div>
+    </section>
+
+<section id="game" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Aveztruz</h3>
+                        <img src="./img/dodrio.png" width="80px">
+                        <p class="card-text">01 02 03 04</p>
+                        <hr>
+                        <p class="card-number">01</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Águia</h3>
+                        <img src="./img/braviary.png" width="80px">
+                        <p class="card-text">05 06 07 08</p>
+                        <hr>
+                        <p class="card-number">02</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Burro</h3>
+                        <img src="./img/mudbray.png" width="80px">
+                        <p class="card-text">09 10 11 12</p>
+                        <hr>
+                        <p class="card-number">03</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Borboleta</h3>
+                        <img src="./img/buttefree.png" width="80px">
+                        <p class="card-text">13 14 15 16</p>
+                        <hr>
+                        <p class="card-number">04</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Cachorro</h3>
+                        <img src="./img/growligth.png" width="80px">
+                        <p class="card-text">17 18 19 20</p>
+                        <hr>
+                        <p class="card-number">05</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Cabra</h3>
+                        <img src="./img/gogoat.png" width="80px">
+                        <p class="card-text">21 22 23 24</p>
+                        <hr>
+                        <p class="card-number">06</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Carneiro</h3>
+                        <img src="./img/mareep.png" width="80px">
+                        <p class="card-text">25 26 27 28</p>
+                        <hr>
+                        <p class="card-number">07</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Camelo</h3>
+                        <img src="./img/camerupt.png" width="80px">
+                        <p class="card-text">29 30 31 32</p>
+                        <hr>
+                        <p class="card-number">08</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Cobra</h3>
+                        <img src="./img/arbok.png" width="80px">
+                        <p class="card-text">33 34 35 36</p>
+                        <hr>
+                        <p class="card-number">09</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Coelho</h3>
+                        <img src="./img/bunneary.png" width="80px">
+                        <p class="card-text">37 38 39 40</p>
+                        <hr>
+                        <p class="card-number">10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Cavalo</h3>
+                        <img src="./img/ponyta.png" width="80px">
+                        <p class="card-text">41 42 43 44</p>
+                        <hr>
+                        <p class="card-number">11</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Elefante</h3>
+                        <img src="./img/phanpy.png" width="80px">
+                        <p class="card-text">45 46 47 48</p>
+                        <hr>
+                        <p class="card-number">12</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Galo</h3>
+                        <img src="./img/combusken.png" width="80px">
+                        <p class="card-text">49 50 51 52</p>
+                        <hr>
+                        <p class="card-number">13</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Gato</h3>
+                        <img src="./img/Meowth.png" width="80px">
+                        <p class="card-text">53 54 55 56</p>
+                        <hr>
+                        <p class="card-number">14</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Jacaré</h3>
+                        <img src="./img/Feraligatr.png" width="80px">
+                        <p class="card-text">57 58 59 60</p>
+                        <hr>
+                        <p class="card-number">15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Leão</h3>
+                        <img src="./img/pyroar.png" width="80px">
+                        <p class="card-text">61 62 63 64</p>
+                        <hr>
+                        <p class="card-number">16</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Macaco</h3>
+                        <img src="./img/monferno.png" width="80px">
+                        <p class="card-text">65 66 67 68</p>
+                        <hr>
+                        <p class="card-number">17</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Porco</h3>
+                        <img src="./img/grumpig.png" width="80px">
+                        <p class="card-text">69 70 71 72</p>
+                        <hr>
+                        <p class="card-number">18</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Pavão</h3>
+                        <img src="./img/ho-oh.png" width="80px">
+                        <p class="card-text">73 74 75 76</p>
+                        <hr>
+                        <p class="card-number">19</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Peru</h3>
+                        <img src="./img/pidgeotto.png" width="80px">
+                        <p class="card-text">77 78 79 80</p>
+                        <hr>
+                        <p class="card-number">20</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Touro</h3>
+                        <img src="./img/taurus.png" width="80px">
+                        <p class="card-text">81 82 83 84</p>
+                        <hr>
+                        <p class="card-number">21</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Tigre</h3>
+                        <img src="./img/raikou.png" width="80px">
+                        <p class="card-text">85 86 87 88</p>
+                        <hr>
+                        <p class="card-number">22</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Urso</h3>
+                        <img src="./img/ursaring.png" width="80px">
+                        <p class="card-text">89 90 91 92</p>
+                        <hr>
+                        <p class="card-number">23</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Veado</h3>
+                        <img src="./img/Sawsbuck.png" width="80px">
+                        <p class="card-text">93 94 95 96</p>
+                        <hr>
+                        <p class="card-number">24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container"> 
+        <h2 class="text-center text-warning mb-4">Entre em Contato</h2>
+        <p class="text-center">Estamos aqui para responder a todas as suas perguntas. Entre em contato conosco!</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Seu E-mail">
+            </div>
+            <div class="form-group">
+                <textarea name="message" class="form-control" placeholder="Sua Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer class="bg-white py-2">
+    <div class="container">
+        <p class="text-center ">&copy; 2024 Bichomon Online. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    
